@@ -1,0 +1,152 @@
+{
+  "basics": {
+    "name": "Enrique Octavio González",
+    "minidescription": "Frontend Developer. Creo aplicaciones web intuitivas y eficientes para la experiencia del usuario.",
+    "image": "https://avatars.githubusercontent.com/u/129549674?s=400&u=d1c671816b179144ef7c0a9ccfd18481c7daa8fa&v=4",
+    "summary": "Me gusta diseñar, desarrollar y crear cosas desde cero. Experto en crear experiencias web y aplicaciones atractivas y funcionales. Amante de la creatividad y la resolución de problemas, siempre buscando llevar la usabilidad y la estética al siguiente nivel. Comprometido en brindar soluciones innovadoras que mejoren la interacción entre usuarios y tecnología.",
+    "location": {
+      "city": "Ciudad de Panamá",
+      "region": "Panamá"
+    },
+    "contact": {
+      "email": "engonzalez@cdspanama.org",
+      "email_icon": "../icons/mail.svg",
+      "phone": "(+507) 6010-1210",
+      "phone_icon": "../icons/phone.svg"
+    },
+    "profiles": {
+      "x": "https://twitter.com/EnriqueOctavio_",
+      "x_icon": "../icons/x.svg",
+      "linkedin": "https://www.linkedin.com/in/enrique-octavio-gonz%C3%A1lez-b0b9522b6/",
+      "linkedin_icon": "../icons/linkedin.svg",
+      "github": "https://github.com/QuiQueCode2912",
+      "github_icon": "../icons/github.svg"
+    }
+  },
+  "works": [{
+    "name": "Fundación Ciudad del saber",
+    "position": "Frontend developer",
+    "url": "https://ciudaddelsaber.org/",
+    "startDate": "2022-4-15",
+    "endDate": "Actualidad",
+    "summary": "Mi labor consiste en garantizar el óptimo funcionamiento de los portales web existentes y en la creación de nuevos sitios y aplicaciones web. Me dedico a diseñar una arquitectura de software robusta y eficiente, complementada con una experiencia de usuario (UX) y una interfaz de usuario (UI) de alta calidad, ambas orientadas a facilitar y mejorar el flujo de navegación del usuario.",
+    "modality": "in-person",
+    "highlights": [
+      "Started the company"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "url": "https://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "University",
+    "url": "https://institution.com/",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-01-01",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [
+      "Web Development",
+        "HTML5",
+        "CSS",
+        "JavaScript",
+        "Tailwind",
+        "React",
+        "Next.js",
+        "Astro"
+  ],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [{
+    "name": "Sicultura",
+    "description": "Un proyecto muy bonito que conecta la tecnología con la cultura en forma de un directorio, mapa y estadísticas culturales.",
+    "technologies": [
+      "Frontend developer",
+      "HTML5",
+      "Tailwind",
+      "Statamic",
+      "Vue.js"
+    ],
+    "url": "https://sicultura.gob.pa/"
+  },{
+    "name": "Empreturismo",
+    "description": "Un proyecto encargado de capacitar e impulsar ideas, emprendimientos y MYPES de ámbito turístico a nivel nacional.",
+    "technologies": [
+      "Frontend",
+      "Software Architecture",
+      "HTML5",
+      "Tailwind",
+      "Laravel",
+      "React"
+    ],
+    "url": "https://sicultura.gob.pa/"
+  },{
+    "name": "Portal campus CDS",
+    "description": "Un portal publicitario donde podrás ver eventos, espacios, locales y más de todo el campus de Ciudad del saber.",
+    "technologies": [
+      "Frontend",
+      "Backend",
+      "HTML5",
+      "Tailwind",
+      "Next.js",
+      "Strapi"
+    ],
+    "url": "https://sicultura.gob.pa/"
+  },{
+    "name": "Sitio comercial CDS",
+    "description": "Encargado de actualizar los estilos de la página comercial de Ciudad del saber, adoptamos un UI/UX fresco y moderno.",
+    "technologies": [
+      "Frontend",
+      "HTML5",
+      "CSS",
+      "Boostrap",
+      "Laravel"
+    ],
+    "url": "https://sicultura.gob.pa/"
+  }]
+}

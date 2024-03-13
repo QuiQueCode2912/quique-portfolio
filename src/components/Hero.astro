@@ -1,0 +1,97 @@
+---
+import { basics } from '@cv'
+import { reference } from 'astro:content';
+
+const { name, minidescription, location, image, contact, profiles } = basics;
+const { city, region } = location;
+const { phone, phone_icon, email, email_icon} = contact;
+const { x, x_icon, linkedin, linkedin_icon, github, github_icon } = profiles;
+
+---
+
+<section class="mx-auto max-w-2xl sm:flex sm:justify-between sm:gap-x-16">
+  <div class="sm:w-3/4">
+    <h1 class="text-2xl font-bold">🚀{name}</h1>
+    <p class="pt-2">{minidescription}</p>
+    <a class="text-xs" href="">
+      🌍 {city}, {region}
+    </a>
+    <div class="pt-2 flex gap-x-1">
+      <button name="copy"  class="rounded-lg border border-gray-400 hover:bg-gray-100 hover:border-gray-400 hover:shadow-lg duration-150 h-8 w-8 tooltip" data-tooltip=`📞 ${ phone }`>
+        <img class="mx-auto h-4 w-5" src={ phone_icon} alt="Phone icon">
+      </button>
+      <button name="copy"  class="rounded-lg border border-gray-400 hover:bg-gray-100 hover:border-gray-400 hover:shadow-lg duration-150 h-8 w-8 tooltip" data-tooltip=`✉️ ${ email }`>
+        <img class="mx-auto h-4 w-5" src={ email_icon } alt="Email icon">
+      </button>
+      <a href={linkedin} class="rounded-lg border border-gray-400 hover:bg-gray-100 hover:border-gray-400 hover:shadow-lg duration-150 h-8 w-8 flex items-center" >
+        <img class="mx-auto h-4 w-5" src={ linkedin_icon } alt="Linkedine icon">
+      </a>
+      <a href={x} class="rounded-lg border border-gray-400 hover:bg-gray-100 hover:border-gray-400 hover:shadow-lg duration-150 h-8 w-8 flex items-center" >
+        <img class="mx-auto h-4 w-5" src={ x_icon } alt="X icon">
+      </a>
+      <a href={github} class="rounded-lg border border-gray-400 hover:bg-gray-100 hover:border-gray-400 hover:shadow-lg duration-150 h-8 w-8 flex items-center">
+        <img class="mx-auto h-4 w-5" src={ github_icon } alt="Github icon">
+      </a>
+    </div>
+  </div>
+  <div class="sm:w-1/4 mt-4">
+    <img width="400px" height="400px" class="rounded-lg h-28 w-28 object-cover" src={image} alt="profile">
+  </div>
+</section>
+
+<style>
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.682);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: auto; /* Ajusta esto a tu necesidad */
+    white-space: nowrap;
+  }
+
+  .tooltip:hover::before {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+
+<script type="module">
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const copyButtons = document.querySelectorAll('.tooltip'); // Selecciona todos los elementos con clase 'tooltip'
+
+    copyButtons.forEach(button => { // Itera sobre cada botón
+      button.addEventListener('click', function() {
+        const originalTooltipValue = this.getAttribute('data-tooltip'); // Guarda el valor original del tooltip
+
+        if (!originalTooltipValue) return;
+
+        // Copia el valor al portapapeles
+        navigator.clipboard.writeText(originalTooltipValue).then(() => {
+          // Cambia el tooltip a "Copiado"
+          this.setAttribute('data-tooltip', 'Copiado ✅');
+          // Restablece el tooltip después de 2 segundos
+          setTimeout(() => {
+            this.setAttribute('data-tooltip', originalTooltipValue);
+          }, 2000); // 2000 milisegundos = 2 segundos
+        }).catch(err => {
+          console.error('Error al copiar al portapapeles: ', err);
+        });
+      });
+    });
+  });
+</script>

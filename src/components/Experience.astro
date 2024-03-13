@@ -1,0 +1,28 @@
+--- 
+import Section from "./Section.astro";
+import { works } from "@cv";
+ // const { name, position, url, startDate, endDate, summary, modality } = works;
+---
+
+<Section title="Experiencia laboral">
+  <ul class="flex flex-col gap-y-4 divide-y divide-gray-300">
+    {works.map(({ name, position, url, startDate, endDate, summary, modality }) => {
+      return (
+        <li class="pt-4">
+          <article>
+            <header class="sm:flex justify-between">
+              <div class="flex gap-x-2">
+                <h3><a class="text-base font-semibold text-gray-900 hover:underline duration-200" href={ url }>{ name }</a></h3> <span class="text-xs bg-gray-200 p-1 rounded-lg">{modality}</span>
+              </div>
+              <span class="text-sm text-gray-900">{startDate} - {endDate}</span>
+            </header>
+            <footer>
+              <p class="text-gray-800 pt-1">{ position }</p>
+              <p class="text-sm sm:text-xs">{summary}</p>
+            </footer>
+          </article>
+        </li>
+      )
+    })}
+  </ul>
+</Section>
