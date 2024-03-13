@@ -124,7 +124,7 @@
       "Laravel",
       "React"
     ],
-    "url": "https://sicultura.gob.pa/"
+    "url": "https://empreturismo.com/"
   },{
     "name": "Portal campus CDS",
     "description": "Un portal publicitario donde podrás ver eventos, espacios, locales y más de todo el campus de Ciudad del saber.",
@@ -136,7 +136,7 @@
       "Next.js",
       "Strapi"
     ],
-    "url": "https://sicultura.gob.pa/"
+    "url": "https://portal.campus.ciudaddelsaber.org/"
   },{
     "name": "Sitio comercial CDS",
     "description": "Encargado de actualizar los estilos de la página comercial de Ciudad del saber, adoptamos un UI/UX fresco y moderno.",
@@ -147,6 +147,6 @@
       "Boostrap",
       "Laravel"
     ],
-    "url": "https://sicultura.gob.pa/"
+    "url": "https://comercial.ciudaddelsaber.org/"
   }]
 }
