@@ -9,7 +9,7 @@ import { projects } from '@cv';
     {projects.map(({ name, description, technologies, url }) => {
       return (
         <li class="p-4 border border-gray-200 rounded-lg">
-          <h4><a class="text-lg font-semibold text-gray-900 hover:underline duration-200" href={ url }>{name}</a></h4>
+          <h4 class="flex items-center gap-2"><a class="text-lg font-semibold text-gray-900 hover:underline duration-200" href={ url }>{name}</a> <div class="rounded-full h-2 w-2 bg-green-500"></div></h4>
           <p class="text-xs pt-2">{description}</p>
           <ul class="flex gap-1 pt-2 flex-wrap">
             {technologies.map(technologie => (
@@ -17,8 +17,7 @@ import { projects } from '@cv';
             ))}
           </ul>
         </li>
-      )
-    })}
+      )})}
   </ul>
 </Section>
 
